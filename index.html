@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>javascript-task-1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container mt-4 border">
+            <!-- <form name="form"> -->
+                <h3>SERVICE REQUIRED FOR <a class="text-success">PLUMBER</a></h3>
+                <div class="row mt-4">
+                    <div class="col">
+                        <label for="username">
+                            <h5 class="text-success">Customer Name</h5>
+                        </label>
+                        <input type="text" placeholder="Customer Name" name="coustumerName" id="custumerName"
+                            class="form-control">
+                        <span id="alert" class="text-danger"></span>
+                    </div>
+                    <div class="col">
+                        <label for="phnum">
+                            <h5 class="text-success">Mobile Number</h5>
+                        </label>
+                        <input type="number" placeholder="Mobile Number" name="mobileNumber" id="phnnum"
+                            class="form-control">
+                        <span id="alert1" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <label for="serviceLocation">
+                            <h5 class="text-success">Service Location</h5>
+                        </label>
+                        <textarea class="form-control" rows="5" id="serviceLocation" name="serviceLocation"></textarea>
+                        <span id="alert2" class="text-danger"></span>
+                    </div>
+                    <div class="col">
+                        <label for="issueDescribtion">
+                            <h5 class="text-success">Issue Description</h5>
+                        </label>
+                        <textarea class="form-control" rows="5" id="issueDescribtion"
+                            name="issueDescribtion"></textarea>
+                        <span id="alert3" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <label for="comment">
+                            <h5 class="text-success">Suitable Timing</h5>
+                        </label><br>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="radio1">
+                                <h5>
+                                    <input type="radio" class="form-check-input" id="radio1" name="optradio"
+                                        onclick="no()" value="anytime">Any Time
+                                </h5>
+                            </label>
+
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="radio2">
+                                <h5>
+                                    <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                        onclick="dis()">Choose Timing
+                                </h5>
+                            </label>
+                        </div>
+
+                        <h5 class="text-success mt-4">Note :visiting cost <i class='bx bx-rupee'></i> 100.00</h5>
+                    </div>
+                    <div class="col lo" id="di">
+                        <label for="date">
+                            <h5 class="text-success">Choose Timing</h5>
+                        </label>
+                        <input type="date" class="form-control" id="date">
+                        <span id="alert4" class="text-danger"></span>
+
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <button type="submit" class="btn btn-success yar" onclick="sub()">Submit</button>
+                    <button type="Reset" class="btn btn-outline-success ml-3" onclick="resetInput()">Reset</button>
+                </div>
+
+
+                <table class="table mt-5" id="myTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">Customer Name</th>
+                            <th scope="col">Mobile Number</th>
+                            <th scope="col">Service Location</th>
+                            <th scope="col">Issue Description</th>
+                            <th scope="col">Choose Timing</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bodyId">
+
+                    </tbody>
+                </table>
+            <!-- </form>
+             -->
+        </div>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
